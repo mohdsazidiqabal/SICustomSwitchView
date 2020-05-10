@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample Switch Viewcontroller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SISampleSwitchViewcontroller" customModule="SICustomSwitch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rU-aJ-6j0" customClass="SICustomeSwitchView" customModule="SICustomSwitch" customModuleProvider="target">
+                                <rect key="frame" x="80" y="40" width="215" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5ni-3V-UWr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="setOnColor">
+                                        <color key="value" red="0.3294117647" green="0.50980392159999999" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="setOffColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jxu-7a-ELr" customClass="SICustomeSwitchView" customModule="SICustomSwitch" customModuleProvider="target">
+                                <rect key="frame" x="50" y="120" width="275" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="UOS-1x-SG9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="setOnColor">
+                                        <color key="value" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="setOffColor">
+                                        <color key="value" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ifl-PZ-i05" customClass="SICustomeSwitchView" customModule="SICustomSwitch" customModuleProvider="target">
+                                <rect key="frame" x="40" y="205" width="295" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="ncZ-Ma-qMa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="setOnColor">
+                                        <color key="value" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="setOffColor">
+                                        <color key="value" red="0.97254901959999995" green="0.79607843140000001" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fai-Nd-ouZ" customClass="SICustomeSwitchView" customModule="SICustomSwitch" customModuleProvider="target">
+                                <rect key="frame" x="20" y="300" width="335" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="tIo-Vi-Tk2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.039215686274509803" green="0.078431372549019607" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4rU-aJ-6j0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4yO-hc-Mde"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fai-Nd-ouZ" secondAttribute="trailing" constant="20" id="5MW-z7-MnW"/>
+                            <constraint firstItem="Fai-Nd-ouZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Eg-1T-ExX"/>
+                            <constraint firstItem="ifl-PZ-i05" firstAttribute="top" secondItem="Jxu-7a-ELr" secondAttribute="bottom" constant="30" id="6lj-4P-CVO"/>
+                            <constraint firstItem="4rU-aJ-6j0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Drg-Rx-CEg"/>
+                            <constraint firstItem="ifl-PZ-i05" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Pgo-J3-UyI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jxu-7a-ELr" secondAttribute="trailing" constant="50" id="UuT-bZ-XTQ"/>
+                            <constraint firstItem="Fai-Nd-ouZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hUM-bL-ABa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ifl-PZ-i05" secondAttribute="trailing" constant="40" id="ojy-gO-x3c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4rU-aJ-6j0" secondAttribute="trailing" constant="80" id="qbv-Ei-zBF"/>
+                            <constraint firstItem="Jxu-7a-ELr" firstAttribute="top" secondItem="4rU-aJ-6j0" secondAttribute="bottom" constant="30" id="sM7-Ad-xWm"/>
+                            <constraint firstItem="Jxu-7a-ELr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wcw-P8-ecB"/>
+                            <constraint firstItem="Fai-Nd-ouZ" firstAttribute="top" secondItem="ifl-PZ-i05" secondAttribute="bottom" constant="30" id="xMk-by-Lps"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="switchFirst" destination="4rU-aJ-6j0" id="LSZ-DY-5tf"/>
+                        <outlet property="switchFourth" destination="Fai-Nd-ouZ" id="Wg6-pI-pFx"/>
+                        <outlet property="switchSecond" destination="Jxu-7a-ELr" id="M7f-lO-amT"/>
+                        <outlet property="switchThird" destination="ifl-PZ-i05" id="NrO-I8-z84"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
